@@ -5,7 +5,7 @@
   "courses": [
     {
       "course_id": "creating-a-rules-project",
-      "title": "Creating a rules project"
+      "title": "Creating a Rules Project in JBoss BRMS"
     },
     {
       "course_id": "domain-model",
