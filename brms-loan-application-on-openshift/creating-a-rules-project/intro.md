@@ -6,5 +6,4 @@ Business Central provides a number of different BRMS functionalities:
 - Workbench: A set of editors, wizards and tools to allow the user to create and manage business rules.
 - Artifact Repository:  A *Maven*-based repository which stores the (compiled) business-rules projects that can be deployed onto the execution environment.
 
-
 In this course you will learn how to access the Business Central environment on JBoss BRMS. We will create an initial Asset Repository and our first Business-Rules Project.
