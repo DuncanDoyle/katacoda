@@ -6,9 +6,9 @@
   "time": "5-10 minutes",
   "details": {
     "steps": [
-      { "title": "Opening the Business Central workbench", "text": "step1.md" },
-      { "title": "Creating the rules-asset repository", "text": "step2.md" },
-      { "title": "Creating the rules project", "text": "step3.md" }
+      { "title": "Opening the Business Central workbench", "text": "open-workbench.md" },
+      { "title": "Creating the rules-asset repository", "text": "create-repository.md" },
+      { "title": "Creating the rules project", "text": "create-rules-project.md" }
     ],
     "intro": {
       "text": "intro.md",
@@ -22,6 +22,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "openshift"
+    "imageid": "docker"
   }
 }
