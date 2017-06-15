@@ -24,6 +24,6 @@
     "dashboards": [{"name": "Business Central", "port": 8080}]
   },
   "backend": {
-    "imageid": "centos7"
+    "imageid": "centos"
   }
 }
