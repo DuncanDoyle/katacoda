@@ -7,12 +7,11 @@ To add a *Condition* column:
 1. Click on the *+* sign next to the word “Decision Table”
 2. Click on *New Column*
 3. Select “Add a Simple Condition” and define the following settings:
-
-– Pattern: Applicant (set “a” for binding)
-– Calculation Type: Literal Value
-– Field: creditScore
-– Operator: greater than or equal to
-– Column Header: Minimum Credit Score
+- Pattern Applicant: (set “a” for binding)
+- Calculation Type: Literal Value
+- Field: creditScore
+- Operator: greater than or equal to
+- Column Header: Minimum Credit Score
 
 Define 3 additional Condition columns with the following values:
 
