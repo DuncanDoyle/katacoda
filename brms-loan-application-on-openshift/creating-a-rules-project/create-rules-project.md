@@ -10,6 +10,8 @@ To create the project, perform the following steps:
 
 <img src="../../assets/brms-select-loan-repository.png" width="400" />
 
+Now that we've selected the correct repository, we can create our project.
+
 1. Click on *Authoring -> Project Authoring”*
 2. Click on *New Item -> Project*
 3. Provide the following details:
