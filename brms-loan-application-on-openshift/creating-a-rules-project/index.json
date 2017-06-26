@@ -13,7 +13,7 @@
       { "title": "Decision Table", "text": "decision-table.md" },
       { "title": "Condition Columns", "text": "decision-table-conditions.md" },
       { "title": "Action Columns", "text": "decision-table-actions.md" },
-      { "title": "Writing the Rules", "text": "writing the rules.md" }
+      { "title": "Writing the Rules", "text": "writing-the-rules.md" }
     ],
     "intro": {
       "text": "intro.md",
