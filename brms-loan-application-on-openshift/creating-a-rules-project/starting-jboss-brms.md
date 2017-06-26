@@ -11,4 +11,4 @@ After the platform has started, you can access the Business Central workbench at
 - username: brmsAdmin
 - password: jbossbrms1!
 
-![Business Central](https://github.com/DuncanDoyle/katacoda/blob/master/brms-loan-application-on-openshift/creating-a-rules-project/assets/brms-index.png)
+![Business Central](https://raw.githubusercontent.com/DuncanDoyle/katacoda/master/brms-loan-application-on-openshift/creating-a-rules-project/assets/brms-index.png)
