@@ -28,6 +28,6 @@
     "showdashboard": false
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "openshift"
   }
 }
