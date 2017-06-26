@@ -22,6 +22,6 @@ Now we’re going to create a new repository in which we can store our project:
 2. Give it the *Repository Name* “loan” and assign it to the “Demos” OU we created earlier (leave the *Managed Repository* checkbox unchecked).
 3. Click on the "Finish" button.
 
-![Loan Repository](../../assets/brms-loan-repository.png)
+<img src="../../assets/brms-loan-repository.png" width="200" />
 
 We now have a repository in which we can store our project and our assets. The next step is to create the project.

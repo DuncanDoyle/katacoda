@@ -9,7 +9,11 @@
       { "title": "Starting the Business Central workbench", "text": "starting-jboss-brms.md" },
       { "title": "Creating the rules-asset repository", "text": "create-repository.md" },
       { "title": "Creating the rules project", "text": "create-rules-project.md" },
-      { "title": "The data-model", "text": "data-model.md" }
+      { "title": "The Data-Model", "text": "data-model.md" },
+      { "title": "Decision Table", "text": "decision-table.md" },
+      { "title": "Condition Columns", "text": "decision-table-conditions.md" },
+      { "title": "Action Columns", "text": "decision-table-actions.md" },
+      { "title": "Writing the Rules", "text": "writing the rules.md" }
     ],
     "intro": {
       "text": "intro.md",
