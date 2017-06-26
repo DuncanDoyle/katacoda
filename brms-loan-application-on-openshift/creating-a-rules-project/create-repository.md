@@ -1,4 +1,27 @@
+
+Business Central provides a number of different BRMS functionalities:
+
+- Asset/Rules Repository: A *Git*-based, version controlled, repository in which the BRMS projects and their assets (rules, decision tables, data-models, etc).
+- Workbench: A set of editors, wizards and tools to allow the user to create and manage business rules.
+- Artifact Repository:  A *Maven*-based repository which stores the (compiled) business-rules projects that can be deployed onto the execution environment.
+
+Before we can create our rules project, we first need to configure the repository in which we can store our project assets.
+
+To do this, we first need to create a so-called Organizational Unit (OU) in the “Business Central” interface. An OU is a concept within Business Central workbench that defines an entity within your organisation. Within Business Central, a repository is always owned by an OU
+
+- In the workbench, click on *Authoring -> Administration*
+- Click on *Organizational Units -> Manage Organizational Units*
+- Click on *Add* and create a new Organizational Unit with *Name* and *Default Group ID* "Demos” (you can leave the other fields in the screen empty).
+- Click on the *OK* button
+
+![Organizational Unit](../../assets/brms-organizational-unit.png)
+
 Now we’re going to create a new repository in which we can store our project:
 
-Click on “Repositories -> New repository”
-Give it the name “loan” and assign it to the “Demos” OU we created earlier (leave “Managed Repository” unchecked).
+- Click on *Repositories -> New repository*
+- Give it the *Repository Name* “loan” and assign it to the “Demos” OU we created earlier (leave the *Managed Repository* checkbox unchecked).
+- Click on the "Finish" button.
+
+![Loan Repository](../../assets/brms-loan-repository.png)
+
+We now have a repository in which we can store our project and our assets. The next step is to create the project.

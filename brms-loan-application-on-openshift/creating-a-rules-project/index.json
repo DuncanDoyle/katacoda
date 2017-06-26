@@ -7,7 +7,6 @@
   "details": {
     "steps": [
       { "title": "Starting the Business Central workbench", "text": "starting-jboss-brms.md" },
-      { "title": "Opening the Business Central workbench", "text": "open-workbench.md" },
       { "title": "Creating the rules-asset repository", "text": "create-repository.md" },
       { "title": "Creating the rules project", "text": "create-rules-project.md" }
     ],
