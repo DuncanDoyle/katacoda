@@ -8,7 +8,8 @@
     "steps": [
       { "title": "Starting the Business Central workbench", "text": "starting-jboss-brms.md" },
       { "title": "Creating the rules-asset repository", "text": "create-repository.md" },
-      { "title": "Creating the rules project", "text": "create-rules-project.md" }
+      { "title": "Creating the rules project", "text": "create-rules-project.md" },
+      { "title": "The data-model", "text": "data-model.md" }
     ],
     "intro": {
       "text": "intro.md",
