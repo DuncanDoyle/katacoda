@@ -1,11 +1,12 @@
-Our rule will contain a single *Action* column. This column basically sets the ``approved`` boolean field of the ``LoanApplication`` fact to ``true`` or ``false``. I.e. the rule action of the rule is to define whether the loan application has been approved.
+We can now implement our rules, we will write 4 rules in total that, depending on your creditscore and the requested amount, will decide whether the loan will be approved or not.
 
-1. Click again on *New Column*
-2. Select *Set the value of a field*
-3. Provide the following values:
-– Fact: l (this is our Loan fact that we defined in our Condition columns)
-– Field: approved
-– Column header: Approved?
-4. Save the Decision Table.
+This are our 4 rules:
 
-We can now implement the rows of our decision table which in fact defines our rules, where each row defines a single rule.
+| Description | Minimum Credit Score | Maximum Credit Score | Minimum Amount | Maximum Amount | Approved? |
+| ----------- |:--------------------:|:--------------------:|:--------------:|:--------------:|:---------:|
+| col 3 is    |                      |         200          |        0       |                |   false   |
+| col 2 is    |         201          |         400          |                |      4000      |    true   |
+| col 2 is    |         201          |         400          |      4001      |      5000      |    false  |
+| col 2 is    |         401          |                      |                |      5000      |    true   |
+
+The final table will look like this:
