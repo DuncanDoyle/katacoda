@@ -4,28 +4,28 @@ A data-model in JBoss BRMS can have many forms. As BRMS is a Java-based rules en
 
 We will create a simple data model consisting of 2 classes: *Applicant* and *Loan*.
 
-- Click on *New Item -> Data Object*
-- Give the object the name `Applicant`{{copy}}
-- Set the package to `com.redhat.demos.loandemo`{{copy}}
-- Click on *OK*
+1. Click on *New Item -> Data Object*
+2. Give the object the name `Applicant`{{copy}}
+3. Set the package to `com.redhat.demos.loandemo`{{copy}}
+4. Click on *OK*
 
 Give the object two fields:
-- Click on *+ add field*
-- Add the field with *Id* "creditScore" and *Label* "CreditScore" of type "int".
-- Click on *Create and Continue*
-- Add the field with *Id* "name" and *Label* "Name" of type "String"
-- Click on *Create*
-- Click on the *Save* button to save the model.
+1. Click on *+ add field*
+2. Add the field with *Id* "creditScore" and *Label* "CreditScore" of type "int".
+3. Click on *Create and Continue*
+4. Add the field with *Id* "name" and *Label* "Name" of type "String"
+5. Click on *Create*
+6. Click on the *Save* button to save the model.
 
-![Applicant](../../assets/brms-datamodel-applicant.png)
+<img src="../../assets/brms-datamodel-applicant.png" width="800" />
 
 Next, create a data object with name `Loan`{{copy}} in package `com.redhat.demos.loandemo`{{copy}} with the following fields:
 
-- amount: int (Label: Amount)
-- approved: boolean (Label: Approved)
-- duration: int (Label: Duration)
-- interestRate: double (Label: InterestRate)
+1. amount: int (Label: Amount)
+2. approved: boolean (Label: Approved)
+3. duration: int (Label: Duration)
+4. interestRate: double (Label: InterestRate)
 
 Make sure to also save this model using the *Save* button in the editor. We can now create our rules.
 
-![Loan](../../assets/brms-datamodel-loan.png)
+<img src="../../assets/brms-datamodel-loan.png" width="800" />
