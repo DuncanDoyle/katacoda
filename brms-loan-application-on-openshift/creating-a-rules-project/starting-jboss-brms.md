@@ -10,3 +10,5 @@ After the platform has started, you can access the Business Central workbench at
 
 - username: brmsAdmin
 - password: jbossbrms1!
+
+![Business Central](assets/brms-index.png)
