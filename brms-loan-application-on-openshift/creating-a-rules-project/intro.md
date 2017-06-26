@@ -1,9 +1,6 @@
-JBoss BRMS provides a web-based workbench that allows both developers and business users (e.g. business analysts) to create, manage and maintain business rules projects and business rules. This *workbench* is called **Business Central**.
+JBoss BRMS is a highly powerful, extremely fast and lightweight Business Rules Management System. It can be used in a vast array of scenario's and support multiple deployment topologies. More information on JBoss BRMS can be found on the [Red Hat Website](https://www.redhat.com/en/technologies/jboss-middleware/business-rules) or the website of the [Red Hat Developer Program](https://developers.redhat.com/products/brms/overview/)
 
-Business Central provides a number of different BRMS functionalities:
+In this course you will learn how to create your first rules project on JBoss BRMS. The project will be built in the JBoss BRMS web-based workbench that allows both developers and business users (e.g. business analysts) to create, manage and maintain business rules projects and business rules. This *workbench* is called **Business Central**. We will deploy and run the rules on the lightweight and cloud-ready JBoss BRMS Decision Server.
 
-- Asset/Rules Repository: A *Git*-based, version controlled, repository in which the BRMS projects and their assets (rules, decision tables, data-models, etc).
-- Workbench: A set of editors, wizards and tools to allow the user to create and manage business rules.
-- Artifact Repository:  A *Maven*-based repository which stores the (compiled) business-rules projects that can be deployed onto the execution environment.
-
-In this course you will learn how to access the Business Central environment on JBoss BRMS. We will create an initial Asset Repository and our first Business-Rules Project.
+Unfortunately, Katacode does not provide the required resources to run the JBoss BRMS workbench. We will therefore run this scenario in a Docker runtime
+on our own machine. As such, a Docker installation on your machine is required to continue this scenario.
