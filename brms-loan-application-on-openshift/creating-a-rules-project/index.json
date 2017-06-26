@@ -19,9 +19,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "showdashboard": true,
-    "dashboards": [{"name": "Business Central", "port": 8080}]
+    "showdashboard": false
   },
   "backend": {
     "imageid": "docker"
