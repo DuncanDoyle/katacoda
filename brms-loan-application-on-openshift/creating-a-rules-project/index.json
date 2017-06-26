@@ -3,7 +3,7 @@
   "description": "Learn how to create a rules project in JBoss BRMS",
   "pathwayTitle": "BRMS Loan Application on OpenShift",
   "difficulty": "beginner",
-  "time": "5-10 minutes",
+  "time": "30-60 minutes",
   "details": {
     "steps": [
       { "title": "Starting the Business Central workbench", "text": "starting-jboss-brms.md" },
@@ -13,7 +13,10 @@
       { "title": "Decision Table", "text": "decision-table.md" },
       { "title": "Condition Columns", "text": "decision-table-conditions.md" },
       { "title": "Action Columns", "text": "decision-table-actions.md" },
-      { "title": "Writing the Rules", "text": "writing-the-rules.md" }
+      { "title": "Writing the Rules", "text": "writing-the-rules.md" },
+      { "title": "Stateless KIE-Session", "text": "stateless-kie-session.md" },
+      { "title": "Configure build for OpenShift", "text": "configure-build-for-openshift.md" }
+
     ],
     "intro": {
       "text": "intro.md",
