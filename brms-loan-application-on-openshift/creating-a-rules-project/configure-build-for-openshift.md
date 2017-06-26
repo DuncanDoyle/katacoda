@@ -51,5 +51,7 @@ Note the “provided” scope, as we only require this dependency at compile tim
 Run the build again: “mvn clean install”. The build should now succeed. We can commit these changes and push them back to our Git repository in Business Central with the following commands:
 
 `git add pom.xml`{{copy}}
+
 `git commit -m "Added kie-api dependency to POM."`{{code}}
+
 `git push`{{code}}

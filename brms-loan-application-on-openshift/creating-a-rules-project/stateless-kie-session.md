@@ -17,4 +17,6 @@ In this example we want to use a *Stateless Session*. We can configure such a se
 8. Make sure that the *State* dropdown-list is set to `stateless`
 9. Click on the *Save* button to save the configuration.
 
-We've now configured a *Stateless Session* named `stateless` in a *KIE-Base* called `default-kiebase`. We can now reference this session at runtime when sending requests to the rules engine.
+We've now configured a *Stateless Session* named `stateless` in a *KIE-Base* called `default-kiebase`.
+
+We can now reference this session at runtime when sending requests to the rules engine.

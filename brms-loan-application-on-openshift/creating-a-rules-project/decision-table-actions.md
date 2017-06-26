@@ -4,7 +4,7 @@ Our rule will contain a single *Action* column. This column basically sets the `
 2. Select *Set the value of a field*
 3. Provide the following values:
 
-– Fact: l (this is our Loan fact that we defined in our Condition columns)
+- Fact: l (this is our Loan fact that we defined in our Condition columns)
 – Field: approved
 – Column header: Approved?
 
