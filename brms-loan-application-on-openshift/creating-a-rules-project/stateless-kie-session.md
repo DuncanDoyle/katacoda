@@ -1,27 +1,20 @@
 
-Business Central provides a number of different BRMS functionalities:
+A rules session (the session in which facts are inserted and against which rules are evaluated) can be both stateful and stateless.
 
-1. Asset/Rules Repository: A *Git*-based, version controlled, repository in which the BRMS projects and their assets (rules, decision tables, data-models, etc).
-2. Workbench: A set of editors, wizards and tools to allow the user to create and manage business rules.
-3. Artifact Repository:  A *Maven*-based repository which stores the (compiled) business-rules projects that can be deployed onto the execution environment.
+A *Stateful Session* is a session which is kept open until it is explicitly disposed. This allows the client to keep inserting facts into and fire rules against a session for a longer period of time. This can for example be used in *Complex Event Processing* scenario's in which a session accepts a constant stream of events against which rules are evaluated.
 
-Before we can create our rules project, we first need to configure the repository in which we can store our project assets.
+A *Stateless Session* is a session which is immediately disposed after the facst have been inserted the rules are fired. It's a one-shot approach. The client does a single request into the session in the form of a set of commands, the session executes these commands (.e.g. insert fact, fire rules), returns the result and disposes the session. This is a common architecture in stateless environments, for example when the rules engine is used to implement a decision (micro) service.
 
-To do this, we first need to create a so-called Organizational Unit (OU) in the “Business Central” interface. An OU is a concept within Business Central workbench that defines an entity within your organisation. Within Business Central, a repository is always owned by an OU
+In this example we want to use a *Stateless Session*. We can configure such a session in the *Project Editor* of our rules project:
 
-1. In the workbench, click on *Authoring -> Administration*
-2. Click on *Organizational Units -> Manage Organizational Units*
-3. Click on *Add* and create a new Organizational Unit with *Name* and *Default Group ID* "Demos” (you can leave the other fields in the screen empty).
-4. Click on the *OK* button
+1. Click on *Open Project Editor*.
+2. Click on *Project Settings: Project General Settings* and select *Knowledge bases and sessions*
+3. Click on *Add* (in the upper-left of the editor) and enter the name `default-kiebase`{{code}} to add a new *KIE-Base* configuration (a *KIE-Base* is the entity that defines the rule-assets and configurations used by a session).
+4. Set *Equality Behaviour* to `Equals`
+5. Set *Event Processing Mode* to `Cloud`
+6. In the *Knowledge Session* section click on *Add*
+7. Enter the name `stateles`.
+8. Make sure that the *State* dropdown-list is set to `stateless`
+9. Click on the *Save* button to save the configuration.
 
-<img src="../../assets/brms-organizational-unit.png" width="800" />
-
-Now we’re going to create a new repository in which we can store our project:
-
-1. Click on *Repositories -> New repository*
-2. Give it the *Repository Name* “loan” and assign it to the “Demos” OU we created earlier (leave the *Managed Repository* checkbox unchecked).
-3. Click on the "Finish" button.
-
-<img src="../../assets/brms-loan-repository.png" width="800" />
-
-We now have a repository in which we can store our project and our assets. The next step is to create the project.
+We've now configured a *Stateless Session* named `stateless` in a *KIE-Base* called `default-kiebase`. We can now reference this session at runtime when sending requests to the rules engine.
