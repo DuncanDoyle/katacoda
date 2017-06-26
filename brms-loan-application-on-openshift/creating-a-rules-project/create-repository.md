@@ -14,7 +14,7 @@ To do this, we first need to create a so-called Organizational Unit (OU) in the 
 3. Click on *Add* and create a new Organizational Unit with *Name* and *Default Group ID* "Demos” (you can leave the other fields in the screen empty).
 4. Click on the *OK* button
 
-![Organizational Unit](../../assets/brms-organizational-unit.png)
+<img src="../../assets/brms-organizational-unit.png" width="400" />
 
 Now we’re going to create a new repository in which we can store our project:
 
@@ -22,6 +22,6 @@ Now we’re going to create a new repository in which we can store our project:
 2. Give it the *Repository Name* “loan” and assign it to the “Demos” OU we created earlier (leave the *Managed Repository* checkbox unchecked).
 3. Click on the "Finish" button.
 
-<img src="../../assets/brms-loan-repository.png" width="200" />
+<img src="../../assets/brms-loan-repository.png" width="400" />
 
 We now have a repository in which we can store our project and our assets. The next step is to create the project.
