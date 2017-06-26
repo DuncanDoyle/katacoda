@@ -13,10 +13,10 @@ To create the project, perform the following steps:
 1. Click on *Authoring -> Project Authoring”*
 2. Click on *New Item -> Project*
 3. Provide the following details:
-3.1. Project Name: `loandemo`{{copy}}
-3.2. Group ID: `com.redhat.demos`{{copy}}
-3.3. Artifact ID: `loandemo`{{copy}}
-3.4. Version: `1.0`{{copy}}
+Project Name: `loandemo`{{copy}}
+Group ID: `com.redhat.demos`{{copy}}
+Artifact ID: `loandemo`{{copy}}
+Version: `1.0`{{copy}}
 4. Click on the *Finish* button
 
 We've now created our first BRMS project and can now start creating rules assets. We will begin with creating our domain-model.
