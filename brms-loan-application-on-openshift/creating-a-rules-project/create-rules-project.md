@@ -10,13 +10,13 @@ To create the project, perform the following steps:
 
 ![Select loan repository](../../assets/brms-select-loan-repository.png)
 
-- Click on *Authoring -> Project Authoring”*
-- Click on *New Item -> Project*
-- Provide the following details:
-–- Project Name: `loandemo`{{copy}}
-–- Group ID: `com.redhat.demos`{{copy}}
-–- Artifact ID: `loandemo`{{copy}}
-–- Version: `1.0`{{copy}}
-- Click on the *Finish* button
+1. Click on *Authoring -> Project Authoring”*
+2. Click on *New Item -> Project*
+3. Provide the following details:
+⋅⋅1. Project Name: `loandemo`{{copy}}
+⋅⋅2. Group ID: `com.redhat.demos`{{copy}}
+⋅⋅3. Artifact ID: `loandemo`{{copy}}
+⋅⋅4. Version: `1.0`{{copy}}
+4. Click on the *Finish* button
 
 We've now created our first BRMS project and can now start creating rules assets. We will begin with creating our domain-model.
