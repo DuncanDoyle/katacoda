@@ -16,5 +16,3 @@ We will create our rules in the form of a decision table:
 5. Click on *OK*
 
 We can now implement our rules constraints.
-
-Our decision table will consist of 4 Constraint columns and one Action column. Our Constraint columns define the so-called Left-Hand-Side of our rules, the “when” part. The Action column defines the Right-Hand-Side or “then” part. We will defin
