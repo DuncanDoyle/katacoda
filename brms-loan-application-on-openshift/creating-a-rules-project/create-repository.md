@@ -9,10 +9,10 @@ Before we can create our rules project, we first need to configure the repositor
 
 To do this, we first need to create a so-called Organizational Unit (OU) in the “Business Central” interface. An OU is a concept within Business Central workbench that defines an entity within your organisation. Within Business Central, a repository is always owned by an OU
 
-* In the workbench, click on *Authoring -> Administration*
-* Click on *Organizational Units -> Manage Organizational Units*
-* Click on *Add* and create a new Organizational Unit with *Name* and *Default Group ID* "Demos” (you can leave the other fields in the screen empty).
-* Click on the *OK* button
+1. In the workbench, click on *Authoring -> Administration*
+2. Click on *Organizational Units -> Manage Organizational Units*
+3. Click on *Add* and create a new Organizational Unit with *Name* and *Default Group ID* "Demos” (you can leave the other fields in the screen empty).
+4. Click on the *OK* button
 
 ![Organizational Unit](../../assets/brms-organizational-unit.png)
 
