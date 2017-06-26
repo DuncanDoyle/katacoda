@@ -8,7 +8,7 @@ We can now create our first rules project. A JBoss BRMS rules project can contai
 To create the project, perform the following steps:
 1. First, make sure to select the "loan" repository in the breadcrumbs right under the text *Project Explorer*.
 
-![Select loan repository](../../assets/brms-select-loan-repository.png)
+![Select loan repository](../../assets/brms-select-loan-repository.png =100x)
 
 1. Click on *Authoring -> Project Authoring”*
 2. Click on *New Item -> Project*
