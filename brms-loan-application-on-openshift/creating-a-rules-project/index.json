@@ -16,7 +16,8 @@
       { "title": "Writing the Rules", "text": "writing-the-rules.md" },
       { "title": "Stateless KIE-Session", "text": "stateless-kie-session.md" },
       { "title": "Configure build for OpenShift", "text": "configure-build-for-openshift.md" },
-      { "title": "Push to Github", "text": "push-to-github.md" }
+      { "title": "Push to Github", "text": "push-to-github.md" },
+      { "title": "Deploying to OpenShift", "text": "deploying-to-openshift.md" }
     ],
     "intro": {
       "text": "intro.md",
@@ -27,10 +28,14 @@
     }
   },
   "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
     "uilayout": "terminal",
-    "showdashboard": false
+    "hideintro": false,
+    "hidefinish": false
   },
   "backend": {
-    "imageid": "openshift"
+    "imageid": "openshift",
+    "port": 8443
   }
 }
