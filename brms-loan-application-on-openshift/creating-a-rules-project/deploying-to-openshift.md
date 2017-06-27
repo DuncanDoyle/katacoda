@@ -48,6 +48,8 @@ We can now start the build with the following command:
 
 `oc start-build loan-demo`{{copy}}
 
+(Note that this command can produce an error stating that the *latest image tag* can not be found. However, after some time the build will start.)
+
 When all commands have executed successfully, a *Loan Demo Decision Server* container image build should now be running. This can be verified via the “oc” command “oc describe build” which will provide information of the builds defined on the system. To view the log of a certain build, for example build “loan-demo-1”, we can use the following oc command:
 
 `oc logs build/loan-demo-1`{{copy}}

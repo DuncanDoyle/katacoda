@@ -9,10 +9,6 @@ Once the DecisionServer with our project has been deployed, we can send it a Loa
 
 `curl -u brmsAdmin:jbossbrms@01 -X POST -H "Accept: application/json" -H "Content-Type: application/json" -H "X-KIE-ContentType: JSON" -d '{ "commands":[ { "insert":{ "object":{ "com.redhat.demos.loandemo.Applicant":{ "creditScore":230, "name":"Jim Whitehurst" }}, "out-identifier":"applicant" }}, { "insert":{ "object":{ "com.redhat.demos.loandemo.Loan":{ "amount":2500, "approved":false, "duration":24, "interestRate":1.5 }}, "out-identifier":"loan" }}, { "fire-all-rules":{  }}]}' http://loan-demo-loan-demo.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/kie-server/services/rest/server/containers/instances/container-loan10`{{copy}}
 
-Test console location:
-
-[Console](https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com)
-
 Because the inline JSON in the cUrl command is a bit hard to read, we have printed the formatted JSON request below:
 
 ```
