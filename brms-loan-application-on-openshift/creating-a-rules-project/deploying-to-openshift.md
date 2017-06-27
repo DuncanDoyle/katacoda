@@ -40,10 +40,18 @@ This “oc” command requires some explanation:
 9. CONTEXT_DIR: the name of the directory in which the S2I image should execute the Maven commands to build the project (KJAR).
 More information about these properties can be found here.
 
+Finally, due to a bug in the DecisionServer ImageStreams, we need to apply a small patch to our *BuildConfig*. This changes the ImageStream version our build uses as source from version *1.4* to *1.3*:
+
+`oc patch bc/loan-demo -p '{"spec":{"strategy":{"sourceStrategy":{"from":{"name":"jboss-decisionserver63-openshift:1.3"}}}}}'`{{copy}}
+
+We can now start the build with the following command:
+
+`oc start-build loan-demo`{{copy}}
+
 When all commands have executed successfully, a *Loan Demo Decision Server* container image build should now be running. This can be verified via the “oc” command “oc describe build” which will provide information of the builds defined on the system. To view the log of a certain build, for example build “loan-demo-1”, we can use the following oc command:
 
 `oc logs build/loan-demo-1`{{copy}}
 
 The initial build can take some time as Maven dependencies need to be downloaded.
 
-When the build has successfully finished, an OpenShift pod running our rules in a Decision Server should now be available. To validate that a Decision Server instance is running, we open the administration console (by default this console is available on https://10.1.2.2:8443/console)and navigate to our “BRMS CoolStore” project. The Overview page shows our Pod with a blue ring with the number 1, indicating that 1 pod is up and running and ready to go (note that the OpenShift platform allows us to easily scale up and down the number of running CoolStore-rules instances/pods by clicking on the “up” and “down” arrows).
+When the build has successfully finished, an OpenShift pod running our rules in a Decision Server should now be available. To validate that a Decision Server instance is running, we open the [OpenShift Administration Console](https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com) and navigate to our *Loan Demo* project. The *Overview* page shows our Pod with a blue ring with the number 1, indicating that 1 pod is up and running and ready to go (note that the OpenShift platform allows us to easily scale up and down the number of running *loan-demo* instances/pods by clicking on the “up” and “down” arrows).
