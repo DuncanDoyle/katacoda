@@ -2,5 +2,4 @@ JBoss BRMS is a highly powerful, extremely fast and lightweight Business Rules M
 
 In this course you will learn how to create your first rules project on JBoss BRMS. The project will be built in the JBoss BRMS web-based workbench that allows both developers and business users (e.g. business analysts) to create, manage and maintain business rules projects and business rules. This *workbench* is called **Business Central**. We will deploy and run the rules on the lightweight and cloud-ready JBoss BRMS Decision Server.
 
-Unfortunately, Katacode does not provide the required resources to run the JBoss BRMS workbench. We will therefore run this scenario in a Docker runtime
-on our own machine. As such, a Docker installation on your machine is required to continue this scenario.
+The Katacoda backend we will be using is an OpenShift environment. Unfortunately, Katacode does not provide the required resources to run the JBoss BRMS workbench. We will therefore run this scenario in a Docker runtime on our own machine. As such, a Docker installation on your machine is required to continue this scenario. We will however use the OpenShift instance in our Katacoda environment to run our rules project on the JBoss BRMS Decision Server.
