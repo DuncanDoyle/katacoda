@@ -17,7 +17,8 @@
       { "title": "Stateless KIE-Session", "text": "stateless-kie-session.md" },
       { "title": "Configure build for OpenShift", "text": "configure-build-for-openshift.md" },
       { "title": "Push to Github", "text": "push-to-github.md" },
-      { "title": "Deploying to OpenShift", "text": "deploying-to-openshift.md" }
+      { "title": "Deploying to OpenShift", "text": "deploying-to-openshift.md" },
+      { "title": "Testing the Service", "text": "testing-the-service.md" }
     ],
     "intro": {
       "text": "intro.md",

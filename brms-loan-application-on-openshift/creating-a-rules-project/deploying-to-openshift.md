@@ -10,9 +10,9 @@ Next, we add the required template:
 
 `oc create -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/decisionserver/decisionserver63-basic-s2i.json -n openshift`{{copy}}
 
-Now that we've prepared our OpenShift environment, we can create our project and application. First login as the user `developer`:
+Now that we've prepared our OpenShift environment, we can create our project and application. First login as the user *developer*:
 
-`oc login`
+`oc login`{{copy}}
 
 1. username: developer
 2. password: developer
@@ -30,16 +30,20 @@ We will use the *decision-server63-basic-s2i* template to define and configure o
 This “oc” command requires some explanation:
 
 1. new-app: indicates that we want to create a new application in the current project.
-2. –template=decisionserver63-basic-s2i: use the JBoss BRMS Decision Server 6.3 Source-2-Image template
+2. --template=decisionserver63-basic-s2i: use the JBoss BRMS Decision Server 6.3 Source-2-Image template
 3. APPLICATION_NAME: the name of the application
 4. KIE_SERVER_USER: the username to login to the Decision Server
 5. KIE_SERVER_PASSWORD: the password to login to the Decision Server
 6. SOURCE_REPOSITORY_URL: the location of the Git repository that contains our BRMS project (the project containing our rules).
 7. SOURCE_REPOSITORY_REF: the Git repository’s branch to use.
 8. KIE_CONTAINER_DEPLOYMENT: the name of the KIE Container (in this case `container-loan10`) and the Maven GAV (GroupId, ArtifactId and Version) of the KJAR to be deployed in this KIE Container (in this case `com.redhat.demos:loandemo:1.0`).
-CONTEXT_DIR: the name of the directory in which the S2I image should execute the Maven commands to build the project (KJAR).
+9. CONTEXT_DIR: the name of the directory in which the S2I image should execute the Maven commands to build the project (KJAR).
 More information about these properties can be found here.
 
-When all commands have executed successfully, a Loan Demo Decision Server container image build should now be running. This can be verified via the “oc” command “oc describe build” which will provide information of the builds defined on the system. To view the log of a certain build, for example build “coolstore-rules-1”, we can use the following oc command: “oc logs build/coolstore-rules-1“. The initial build can take some time as Maven dependencies need to be downloaded.
+When all commands have executed successfully, a *Loan Demo Decision Server* container image build should now be running. This can be verified via the “oc” command “oc describe build” which will provide information of the builds defined on the system. To view the log of a certain build, for example build “loan-demo-1”, we can use the following oc command:
+
+`oc logs build/loan-demo-1`{{copy}}
+
+The initial build can take some time as Maven dependencies need to be downloaded.
 
 When the build has successfully finished, an OpenShift pod running our rules in a Decision Server should now be available. To validate that a Decision Server instance is running, we open the administration console (by default this console is available on https://10.1.2.2:8443/console)and navigate to our “BRMS CoolStore” project. The Overview page shows our Pod with a blue ring with the number 1, indicating that 1 pod is up and running and ready to go (note that the OpenShift platform allows us to easily scale up and down the number of running CoolStore-rules instances/pods by clicking on the “up” and “down” arrows).

@@ -6,4 +6,4 @@ We made our project available to our OpenShift S2I build process by pushing our 
 
 Finally we tested our rules using cURL.
 
-JBoss BRMS supports many more use-cases and scenarios. Please consult the various online resources (manuals, blogs, demos, forums, etc.) to continue your JBoss Business Rules Management Journey.
+JBoss BRMS supports many more use-cases and scenarios. Please consult the various online resources (manuals, blogs, demos, forums, etc.) to continue your JBoss Business Rules Management journey.
