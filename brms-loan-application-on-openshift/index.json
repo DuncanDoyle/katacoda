@@ -1,5 +1,5 @@
 {
-  "title": "JBoss BRMS Loan Application demo on OpenShift",
+  "title": "JBoss BRMS Loan Application on OpenShift",
   "description": "Learn how to create a rules demo project in JBoss BRMS running on OpenShift Container Platform.",
   "pathwayTitle": "BRMS Loan Application on OpenShift",
   "difficulty": "beginner",
