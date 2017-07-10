@@ -1,6 +1,6 @@
 {
-  "title": "Creating a rules project",
-  "description": "Learn how to create a rules project in JBoss BRMS",
+  "title": "Create a JBoss BRMS Loan Application demo on OpenShift",
+  "description": "Learn how to create a rules demo project in JBoss BRMS running on OpenShift Container Platform.",
   "pathwayTitle": "BRMS Loan Application on OpenShift",
   "difficulty": "beginner",
   "time": "30-60 minutes",
