@@ -4,7 +4,7 @@ To download and run JBoss BRMS, execute the following commands:
 
 `docker pull duncandoyle/jboss-brms:6.4`{{copy}}
 
-`docker run -p 8080:8080 -t -i --name=jboss-brms duncandoyle/jboss-brms:6.4`{{copy}}
+`docker run -p 8001:8001 -p 8080:8080 -p 9418:9418 -t -i --name=jboss-brms duncandoyle/jboss-brms:6.4`{{copy}}
 
 After the platform has started, you can access the Business Central workbench at (http://{docker-host}:8080/business-central)
 
