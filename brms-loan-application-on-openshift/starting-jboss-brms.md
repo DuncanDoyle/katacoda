@@ -13,4 +13,4 @@ After the platform has started, you can access the Business Central workbench at
 
 If all is well, you will be presented with the following screen:
 
-![Business Central](../../assets/brms-index.png)
+![Business Central](../assets/brms-index.png)
