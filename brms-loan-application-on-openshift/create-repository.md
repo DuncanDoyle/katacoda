@@ -1,7 +1,7 @@
 
 Business Central provides a number of different BRMS functionalities:
 
-1. Asset/Rules Repository: A *Git*-based, version controlled, repository in which the BRMS projects and their assets (rules, decision tables, data-models, etc).
+1. Asset/Rules Repository: A *Git*-based, version controlled, repository in which the BRMS projects and their assets (rules, decision tables, data-models, etc) are stored.
 2. Workbench: A set of editors, wizards and tools to allow the user to create and manage business rules.
 3. Artifact Repository:  A *Maven*-based repository which stores the (compiled) business-rules projects that can be deployed onto the execution environment.
 
