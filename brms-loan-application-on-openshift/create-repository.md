@@ -7,7 +7,7 @@ Business Central provides a number of different BRMS functionalities:
 
 Before we can create our rules project, we first need to configure the repository in which we can store our project assets.
 
-To do this, we first need to create a so-called Organizational Unit (OU) in the “Business Central” interface. An OU is a concept within Business Central workbench that defines an entity within your organisation. Within Business Central, a repository is always owned by an OU
+To do this, we first need to create a so-called Organizational Unit (OU) in the “Business Central” interface. An OU is a concept within Business Central workbench that defines an entity within your organization. Within Business Central, a repository is always owned by an OU
 
 1. In the workbench, click on *Authoring -> Administration*
 2. Click on *Organizational Units -> Manage Organizational Units*
