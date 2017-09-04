@@ -1,0 +1,42 @@
+{
+  "title": "JBoss BRP Cloud Balancing on OpenShift",
+  "description": "Learn how to create a rules demo project in JBoss BRMS running on OpenShift Container Platform.",
+  "pathwayTitle": "BRMS Loan Application on OpenShift",
+  "difficulty": "beginner",
+  "time": "30-60 minutes",
+  "details": {
+    "steps": [
+      { "title": "Starting the Business Central workbench", "text": "starting-jboss-brms.md" },
+      { "title": "Creating the project repository", "text": "create-repository.md" },
+      { "title": "Creating the planner project", "text": "create-planner-project.md" },
+      { "title": "The Domain Model", "text": "domain-model.md" },
+      { "title": "Annotating the Domain Model", "text": "annotate-domain-model.md" },
+      { "title": "Planning Constraints", "text": "planning-constraints.md" },
+      { "title": "Hard Constraints", "text": "hard-constraints.md" },
+      { "title": "Soft Constraints", "text": "soft-constraints.md" },
+      { "title": "Solver Configuration", "text": "solver-configuration.md" },
+      { "title": "Configure build for OpenShift", "text": "configure-build-for-openshift.md" },
+      { "title": "Push to Github", "text": "push-to-github.md" },
+      { "title": "Deploying to OpenShift", "text": "deploying-to-openshift.md" },
+      { "title": "Testing the Service", "text": "testing-the-service.md" }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
+    "uilayout": "terminal",
+    "hideintro": false,
+    "hidefinish": false
+  },
+  "backend": {
+    "imageid": "openshift",
+    "port": 8443
+  }
+}
