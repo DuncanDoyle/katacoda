@@ -1,6 +1,6 @@
 {
   "title": "OptaPlanner Cloud Balancing on OpenShift",
-  "description": "Learn how to create a planner demo project in JBoss Business Resource Planner/OptaPlanner running on OpenShift Container Platform.",
+  "description": "Learn how to create a planner demo project in JBoss BRP/OptaPlanner running on OpenShift Container Platform.",
   "pathwayTitle": "JBoss Business Resource Planner/OptaPlanner Cloud Balancing on OpenShift",
   "difficulty": "beginner",
   "time": "30-60 minutes",
