@@ -1,7 +1,7 @@
 {
-  "title": "JBoss BRP Cloud Balancing on OpenShift",
+  "title": "JBoss Business Resource Planner/OptaPlanner Cloud Balancing on OpenShift",
   "description": "Learn how to create a rules demo project in JBoss BRMS running on OpenShift Container Platform.",
-  "pathwayTitle": "BRMS Loan Application on OpenShift",
+  "pathwayTitle": "JBoss Business Resource Planner/OptaPlanner Cloud Balancing on OpenShift",
   "difficulty": "beginner",
   "time": "30-60 minutes",
   "details": {
