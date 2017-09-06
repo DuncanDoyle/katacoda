@@ -12,4 +12,4 @@ Business Resource Planner/OptaPlanner provides 3 ways in which you can implement
 2. Incremental Java: only calculate the score increments in every step. Very hard to implement but can be really fast (if implemented correctly). Hard tp manage and maintain.
 3. Drools: incremental score calculation using the Drools engine. Every constriant is implemented as a score rule. High performant and easy to implement and maintain.
 
-Given the above, we will use Drools to implement our rules. Let's first build our *hard constraints*.
+Given the above, we will use Drools to implement our rules. Let's first create a Drools global variable that will hold our planning score.
