@@ -9,7 +9,9 @@ To create the project, perform the following steps:
 
 1. Click on *Authoring -> Project Authoring”*
 2. Select the "cloud-balancing" repository in the breadcrumbs right under the text *Project Explorer*.
+
 <img src="../assets/optaplanner-select-cloud-balancing-repository.png" width="400" />
+
 3. Click on *New Item -> Project*
 4. Provide the following details:
 - Project Name: `cloud-balancing`{{copy}}
