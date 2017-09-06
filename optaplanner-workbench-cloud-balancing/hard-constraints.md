@@ -28,7 +28,13 @@ To implement this:
 14. Click on `Number` to add another field constraint. Click on *Expression editor*. In the `Choose...` dropdown list, select `intValue()`.
 15. In the `--- please choose ---` dropdown list, select `greater than`.
 16. Click on the pencil, click on *Bound variable*. In the `Choose...` dropdown list, select `$cpu`. This constraint causes the rule to only fire if the sum of the required CPUs of all processes assigned to this computer is greater than the number of CPUs on the computer.
-17. Click on the *+*-sign next to the *THEN* label in the editor to create a new consequence. Select ``
+17. Click on *not bound* next to `intValue()`. Set `$totalReqCpu` as the binding name variable.
+18. Click on the *+*-sign next to the *THEN* label in the editor to create a new consequence. Select *Add free form DRL*.
+19. Add the following DRL code which sets the hard score: `scoreHolder.addHardConstraintMatch(kcontext, -($totalReqCpu - $spu));`.
+
+The hard-constraint has now been set to the number of CPUs missing in this computer to serve the process assigned to it.
+
+
 
 
 
