@@ -2,12 +2,9 @@ The JBoss BRMS Decision Server S2I build on OpenShift takes the source code of y
 
 Because the OpenShift instance in our demo here in Katacoda will not be able to access the JBoss BRMS Business Central Git repository, we will need to make the Git repository available at a place where our OpenShift instance does have access. In this example we will use GitHub (hence a GithHb account is required), but any Git repository (e.g. BitBucket, GitLab, Gogs) will do.
 
-
 We will first create an empty *loan* repository in GitHub to which we will push the project we've created earlier in Business Central: https://www.github.com/DuncanDoyle/loan
 
-First we will need to to clone the Git repository onto our local filesystem. By default, our *loan* Git repository
-
-As we've already cloned the repository locally in our previous step, we will use this local clone to push our repository to GitHub. We therefore at our new repository in GitHub as the *upstream* repository to our local clone:
+As we've already cloned the repository from Business Central locally in our previous step, we will use this local clone to push our repository to GitHub. We therefore add our new repository in GitHub as the *upstream* repository to our local clone:
 
 `git remote add upstream git@github.com:DuncanDoyle/loan.git`{{copy}}
 
