@@ -20,4 +20,4 @@ To create the project, perform the following steps:
 - Version: `1.0.0`{{copy}}
 5. Click on the *Finish* button
 
-We've now created our first BRMS project and can now start creating rules assets. We will begin with creating our domain-model.
+We've now created our first Planner project and can now start creating rules assets. We will begin with creating our domain-model.
