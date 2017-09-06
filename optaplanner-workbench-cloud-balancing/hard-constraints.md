@@ -3,7 +3,7 @@ We will implement our *hard constraints* using the Business Central *Guided Rule
 To implement our constraint, we first need to define a *Guided Rule*:
 
 1. Open the Business Central console at [http://localhost:8080/business-central](http://localhost:8080/busines-central). Navigate to the `cloud-balancing` project that we created earlier.
-2. Create a new guided rule by clicking on *New Item -> Guided Rule*. Give it the name `totalCpuHardConstraint`.
+2. Create a new guided rule by clicking on *New Item -> Guided Rule*. Give it the name `totalCpuHardConstraint`{{copy}}.
 <img src="../assets/optaplanner-create-guided-rule-hard-constraint.png" width="800" />
 
 We now have an empty Guided Rule. In this rule we now need to implement the following logic:
@@ -30,7 +30,7 @@ To implement this:
 16. Click on the pencil, click on *Bound variable*. In the `Choose...` dropdown list, select `$cpu`. This constraint causes the rule to only fire if the sum of the required CPUs of all processes assigned to this computer is greater than the number of CPUs on the computer.
 17. Click on *not bound* next to `intValue()`. Set `$totalReqCpu` as the binding name variable.
 18. Click on the *+*-sign next to the *THEN* label in the editor to create a new consequence. Select *Add free form DRL*.
-19. Add the following DRL code which sets the hard score: `scoreHolder.addHardConstraintMatch(kcontext, -($totalReqCpu - $spu));`.
+19. Add the following DRL code which sets the hard score: `scoreHolder.addHardConstraintMatch(kcontext, -($totalReqCpu - $cpu));`{{copy}}.
 
 The hard-constraint has now been set to the number of CPUs missing in this computer to serve the process assigned to it.
 
