@@ -2,7 +2,7 @@ The *Solver Configuration* defines the configuration of the Business Resource Pl
 
 To create the *Solver Configuration*:
 
-1. Click on *New Item -> Solver Configuration*. Give it the name `CloudBalancingSolverConfig`.
+1. Click on *New Item -> Solver Configuration*. Give it the name `CloudBalancingSolverConfig`{{copy}}.
 2. Enable the *Spent Limit* and set it to 30 seconds.
 3. Click *Save* to save the solver configuration.
 
