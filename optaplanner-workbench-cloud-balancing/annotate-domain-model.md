@@ -15,7 +15,7 @@ We will first configure the `Process` model as our `@PlanningEntity`. The `@Plan
 Now we need to configur the `@PlanningVariable`. In this example, our `@PlanningVariable` is the `computer` attribute/field of the `Process`.
 
 1. Click on `computer` field in the `Process` model.
-2. In the *Planner Settings* enable *Planning Variable* and use `computers` as the *valueRangeId*
+2. In the *Planner Settings* enable *Planning Variable* and use `computers`{{copy}} as the *valueRangeId*
 
 <img src="../assets/optaplanner-domainmodel-planningvariable.png" width="800" />
 
@@ -27,4 +27,8 @@ Next we need to configure the `@PlanningSolution`:
 2. In the *Planner Settings* panel select *Planning Solution*.
 3. Set *Solution Score Type* to `HardSoftScore` (the default).
 4. Select the `computers` field.
-5. In the *Planner Settins* panel, enable *Planning Value Range Provider* and set the *id* to `computers` (this value must match the *valueRangeId* that we set on the `computer` planning variable on the `Process` model).
+5. In the *Planner Settings* panel, enable *Planning Value Range Provider* and set the *id* to `computers`{{copy}}.
+6. Select the 'processes' field.
+7. In the *Planner Settings* panel, enable *Planning Entity Collection*.
+
+Save the model.
