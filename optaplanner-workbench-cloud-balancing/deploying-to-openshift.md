@@ -40,15 +40,15 @@ This “oc” command requires some explanation:
 9. CONTEXT_DIR: the name of the directory in which the S2I image should execute the Maven commands to build the project (KJAR).
 More information about these properties can be found here.
 
-We can now start the build with the following command:
+The build will start automatically. Build status can be retrieved with the command `oc get builds`{{copy}}. This will list all the builds for this project on the current system. If we want to have more details about, for example, build *cloud-balancing-1*, we can use the following command `oc describe build/cloud-balancing-1`. To view the log of a certain build, for example build *cloud-balancing-1*, we can use the oc commmand `oc logs build/cloud-balancing-1`{{copy}}
+
+If the build does not start automatically, we can manually start a build with the following command:
 
 `oc start-build cloud-balancing`{{copy}}
 
 (Note that this command can produce an error stating that the *latest image tag* can not be found. However, after some time the build will start.)
 
-When all commands have executed successfully, a *Cloud Balancing Demo Decision Server* container image build should now be running. This can be verified via the “oc” command “oc describe build” which will provide information of the builds defined on the system. To view the log of a certain build, for example build “cloud-balancing-demo-1”, we can use the following oc command:
-
-`oc logs build/cloud-balancing-1`{{copy}}
+When all commands have executed successfully, a *Cloud Balancing Demo Decision Server* container image build should now be running. This can be verified via the “oc” command`oc describe build`{{copy}} which will provide information of the builds defined on the system.
 
 The initial build can take some time as Maven dependencies need to be downloaded.
 
