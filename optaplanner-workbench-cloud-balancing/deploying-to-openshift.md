@@ -25,7 +25,9 @@ The platform will automatically switch to our new project.
 
 We will use the *decision-server64-basic-s2i* template to define and configure our new application. We point the template to our repositoy on GitHub containing the source code of our Loan Demo rules project"
 
-`oc new-app --template=decisionserver64-basic-s2i -p APPLICATION_NAME="cloud-balancing" -p KIE_SERVER_USER="brpAdmin" -p KIE_SERVER_PASSWORD="jbossbrp@01" -p SOURCE_REPOSITORY_URL="https://github.com/DuncanDoyle/cloud-balancing.git" -p SOURCE_REPOSITORY_REF=master -p KIE_CONTAINER_DEPLOYMENT="container-cloudbalancing-100=optaplanner:cloud-balancing:1.0.0" -p CONTEXT_DIR="cloud-balancing"`{{copy}}
+`oc new-app --template=decisionserver64-basic-s2i -p APPLICATION_NAME="cloud-balancing" -p KIE_SERVER_USER="brpAdmin" -p KIE_SERVER_PASSWORD="jbossbrp@01" -p SOURCE_REPOSITORY_URL="https://github.com/DuncanDoyle/cloud-balancing.git" -p SOURCE_REPOSITORY_REF=master -p KIE_CONTAINER_DEPLOYMENT="container-cloudbalancing-100=optaplanner:cloud-balancing:1.0.0" -p CONTEXT_DIR="cloud-balancing" -e KIE_SERVER_BRP_DISABLED=false`{{copy}}
+
+Note the environment variable configuration `-e KIE_SERVER_BRP_DISABLED=false`. This is required to enable the Business Resource Planner/OptaPlanner extension in the *Decision Server*.
 
 This “oc” command requires some explanation:
 
