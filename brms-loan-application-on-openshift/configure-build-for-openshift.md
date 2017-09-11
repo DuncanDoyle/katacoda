@@ -40,7 +40,7 @@ Add the following dependency to the “pom.xml” file of the project:
    <dependency>
      <groupId>org.kie</groupId>
      <artifactId>kie-api</artifactId>
-     <version>6.4.0.Final-redhat-13</version>
+     <version>6.5.0.Final-redhat-2</version>
      <scope>provided</scope>
    </dependency>
 </dependencies>

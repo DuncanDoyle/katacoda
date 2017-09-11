@@ -8,7 +8,7 @@ We first install the JBoss ImageStreams:
 
 Next, we add the required template:
 
-`oc create -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/decisionserver/decisionserver63-basic-s2i.json -n openshift`{{copy}}
+`oc create -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/decisionserver/decisionserver64-basic-s2i.json -n openshift`{{copy}}
 
 Now that we've prepared our OpenShift environment, we can create our project and application. First login as the user *developer*:
 
@@ -23,14 +23,14 @@ Create the new project with the following command:
 
 The platform will automatically switch to our new project.
 
-We will use the *decision-server63-basic-s2i* template to define and configure our new application. We point the template to our repositoy on GitHub containing the source code of our Loan Demo rules project"
+We will use the *decision-server64-basic-s2i* template to define and configure our new application. We point the template to our repositoy on GitHub containing the source code of our Loan Demo rules project"
 
-`oc new-app --template=decisionserver63-basic-s2i -p APPLICATION_NAME="loan-demo" -p KIE_SERVER_USER="brmsAdmin" -p KIE_SERVER_PASSWORD="jbossbrms@01" -p SOURCE_REPOSITORY_URL="https://github.com/DuncanDoyle/loan.git" -p SOURCE_REPOSITORY_REF=master -p KIE_CONTAINER_DEPLOYMENT="container-loan10=com.redhat.demos:loandemo:1.0" -p CONTEXT_DIR="loandemo"`{{copy}}
+`oc new-app --template=decisionserver64-basic-s2i -p APPLICATION_NAME="loan-demo" -p KIE_SERVER_USER="brmsAdmin" -p KIE_SERVER_PASSWORD="jbossbrms@01" -p SOURCE_REPOSITORY_URL="https://github.com/DuncanDoyle/loan.git" -p SOURCE_REPOSITORY_REF=master -p KIE_CONTAINER_DEPLOYMENT="container-loan10=com.redhat.demos:loandemo:1.0" -p CONTEXT_DIR="loandemo"`{{copy}}
 
 This “oc” command requires some explanation:
 
 1. new-app: indicates that we want to create a new application in the current project.
-2. --template=decisionserver63-basic-s2i: use the JBoss BRMS Decision Server 6.3 Source-2-Image template
+2. --template=decisionserver64-basic-s2i: use the JBoss BRMS Decision Server 6.3 Source-2-Image template
 3. APPLICATION_NAME: the name of the application
 4. KIE_SERVER_USER: the username to login to the Decision Server
 5. KIE_SERVER_PASSWORD: the password to login to the Decision Server
@@ -40,19 +40,15 @@ This “oc” command requires some explanation:
 9. CONTEXT_DIR: the name of the directory in which the S2I image should execute the Maven commands to build the project (KJAR).
 More information about these properties can be found here.
 
-Finally, due to a bug in the DecisionServer ImageStreams, we need to apply a small patch to our *BuildConfig*. This changes the ImageStream version our build uses as source from version *1.4* to *1.3*:
+The build will start automatically. Build status can be retrieved with the command `oc get builds`{{copy}}. This will list all the builds for this project on the current system. If we want to have more details about, for example, build *loan-demo-1*, we can use the following command `oc describe build/loan-demo-1`. To view the log of a certain build, for example build *loan-demo-1*, we can use the oc commmand `oc logs build/loan-demo-1`{{copy}}
 
-`oc patch bc/loan-demo -p '{"spec":{"strategy":{"sourceStrategy":{"from":{"name":"jboss-decisionserver63-openshift:1.3"}}}}}'`{{copy}}
-
-We can now start the build with the following command:
+If the build does not start automatically, we can manually start a build with the following command:
 
 `oc start-build loan-demo`{{copy}}
 
 (Note that this command can produce an error stating that the *latest image tag* can not be found. However, after some time the build will start.)
 
-When all commands have executed successfully, a *Loan Demo Decision Server* container image build should now be running. This can be verified via the “oc” command “oc describe build” which will provide information of the builds defined on the system. To view the log of a certain build, for example build “loan-demo-1”, we can use the following oc command:
-
-`oc logs build/loan-demo-1`{{copy}}
+When all commands have executed successfully, a *Loan Demo Decision Server* container image build should now be running. This can be verified via the “oc” command `oc describe build`{{copy}} which will provide information of the builds defined on the system.
 
 The initial build can take some time as Maven dependencies need to be downloaded.
 
